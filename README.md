@@ -47,10 +47,21 @@ This code just store the essential functions for inference.
 This code is the deterministic model script use for making initial guess (replacing the phydnet used by the original author).
 
 
+## Prerequisite
+
+- Here are the versions of packages needed to be installed.
+- It is recommanded to follow the instruction to set up an environment to run the code, or please check the packages one by one to make sure the correction version is installed.
 
 
+```
+cd HKO_diffcast/
+conda create -n intern_pytorch python=3.9 pip 
+conda activate intern_pytorch 
+conda install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=12.1 -c pytorch -c nvidia 
+python -m pip install -r requirement.txt 
 
-
+```
+- Then one can navigate into the inference codes.
 
 
 
